@@ -10,3 +10,11 @@ library(lubridate)
 library(stringr)
 library(ggplot2)
 library(ReporteRs)
+
+# set data directories
+warf.dir <- "Warfarin Data"
+vanc.dir <- "Vancomycin Data"
+
+# compress data files
+gzip_files(warf.dir)
+gzip_files(vanc.dir)
